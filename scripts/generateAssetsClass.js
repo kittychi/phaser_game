@@ -32,7 +32,7 @@ function toPascalCase(string) {
 
 function findExtension(haystack, arr) {
     return arr.some(function (v) {
-        return haystack.indexOf(v) >= 0;
+        return haystack.indexOf(v) >= 0 || haystack.indexOf(v.toUpperCase) >= 0;
     });
 }
 
